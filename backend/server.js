@@ -6,10 +6,12 @@ import ProductRoute from "./routes/product.route.js";
 
 dotenv.config();
 
+const port = process.env.PORT || 3000;
+
 const app = express();
-app.listen(3000, () => {
+app.listen( port , () => {
   connectToDatabase();
-  console.log(" Server started on http://localhost:3000");
+  console.log(`Server started on http://localhost:${port}`);
 });
 
 app.use(express.json());

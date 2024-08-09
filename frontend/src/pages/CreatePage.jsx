@@ -9,7 +9,7 @@ import {
   Button,
   useToast,
 } from "@chakra-ui/react";
-import { useProductStore } from "../product";
+import { useProductStore } from "../store/product.js";
 const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({
     name: "",
